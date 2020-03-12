@@ -43,7 +43,7 @@ $(function () {
     var religionDDLength = document.getElementById("religionDD").length;
 	$.ajax({  
         type: "GET",  
-        url: "http://localhost:8080/v1/api/dd/religion",  
+        url: contextPath+"/v1/api/dd/religion",  
         success: function (data) { 
             $("#religionDD").append('<option value="'+'-1'+'" selected="">'+'-- Please select --' +'</option>');
             for (var i = 0; i < data.length; i++) {  

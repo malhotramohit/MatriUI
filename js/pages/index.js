@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿var contextPath = "http://localhost:8080";
+$(function () {
     //Widgets count
     $('.count-to').countTo();
 
