@@ -11,4 +11,18 @@ $(function () {
             $(element).parents('.input-group').append(error);
         }
     });
+
+    $(document).ready(function () {
+        $('#sign_in').submit(function(event) {
+            register(event);
+        });
+    });
+
+    function register(event){
+        event.preventDefault();
+        window.location.href = contextPath+"/main.html";
+    }
+    
+
 });
+
