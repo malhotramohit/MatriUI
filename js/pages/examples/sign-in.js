@@ -20,7 +20,8 @@ $(function () {
 
     function register(event){
         event.preventDefault();
-        window.location.href = contextPath+"/main.html";
+        window.location.replace(contextPath+"/main.html");
+
     }
     
 
