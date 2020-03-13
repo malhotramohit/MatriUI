@@ -392,7 +392,7 @@ $(document).ready(function(){
 	<div class="clearfix"></div>
 	<div class="agileits-register">
 		<h3>Register NOW!</h3>
-		<form action="#" method="post" action="main.html">
+		<form action="#" method="post" id="regitser_form">
 				<div class="w3_modal_body_grid">
 					<span>Profile For:</span>
 					<select id="w3_country" onchange="change_country(this.value)" class="frm-field required">
@@ -1074,8 +1074,10 @@ $(document).ready(function(){
 <!-- //footer -->	
 <!-- menu js aim -->
 	<script src="js/jquery.menu-aim.js"> </script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/main_landing.js"></script> <!-- Resource jQuery -->
 	<!-- //menu js aim -->
+		 <!-- Main Js -->
+		 <script src="../../js/pages/main.js"></script>
 	<!-- for bootstrap working -->
 		<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
@@ -1107,6 +1109,21 @@ $(document).ready(function(){
 	});
 	</script>
 	<!-- //for smooth scrolling -->
+
+	<script>
+
+		$(document).ready(function () {
+			$('#regitser_form').submit(function(event) {
+				register(event);
+			});
+		});
+
+		function register(event){
+			event.preventDefault();
+			window.location.replace("https://madhurrishtey.netlify.com"+"/main.html");
+
+		}
+	</script>
 
 </body>
 <!-- //body -->

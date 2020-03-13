@@ -114,3 +114,15 @@ function getRandomData() {
 
     return res;
 }
+
+$(document).ready(function () {
+    $('#regitser_form').submit(function(event) {
+        register(event);
+    });
+});
+
+function register(event){
+    event.preventDefault();
+    window.location.replace(contextPath+"/main.html");
+
+}
