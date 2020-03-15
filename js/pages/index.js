@@ -26,7 +26,8 @@ let dropdown = $('#motherTongueLists');
 
 
 
-const url = 'https://matri.free.beeceptor.com/mothertounge';
+const url = baseRestEndPoint+'/mothertounge';
+
 
 // Populate dropdown with list of provinces
 $.getJSON(url, function (data) {
